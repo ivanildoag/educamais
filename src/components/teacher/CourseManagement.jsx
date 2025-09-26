@@ -136,7 +136,21 @@ const CourseManagement = () => {
                         <List>
                           {getCourseMaterials(course.id).map((material) => (
                             <Box key={material.id}>
-                              <ListItem>
+                              <ListItem sx={{ alignItems: 'flex-start' }}>
+                                {material.thumbnail && (
+                                  <Box
+                                    sx={{
+                                      width: 50,
+                                      height: 50,
+                                      backgroundImage: `url(${material.thumbnail})`,
+                                      backgroundSize: 'cover',
+                                      backgroundPosition: 'center',
+                                      borderRadius: 1,
+                                      mr: 2,
+                                      flexShrink: 0
+                                    }}
+                                  />
+                                )}
                                 <ListItemText
                                   primary={material.title}
                                   secondary={material.description}

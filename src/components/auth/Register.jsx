@@ -61,18 +61,16 @@ const Register = () => {
     setError('');
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
+  const handleSubmit = () => {
     try {
-      const success = register(name, email, password, userType);
+      const result = register(name, email, password, userType);
       
-      if (success) {
+      if (result.success) {
         // Redirecionar para a página apropriada com base no tipo de usuário
         if (userType === 'teacher') {
-          navigate('/teacher/dashboard');
+          navigate('/teacher');
         } else {
-          navigate('/student/dashboard');
+          navigate('/student');
         }
       } else {
         setError('Erro ao criar conta');
@@ -187,8 +185,21 @@ const Register = () => {
   };
 
   return (
-    <Container component="main" maxWidth="sm">
-      <Paper elevation={3} sx={{ p: 4, mt: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        width: '100vw',
+        flexDirection: 'column',
+        alignItems: 'center',
+        bgcolor: '#f5f5f5',
+        pt: 8,
+        pb: 4
+      }}
+    >
+      <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Paper elevation={3} sx={{ p: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 2, width: '100%' }}>
         <Box sx={{ 
           display: 'flex', 
           flexDirection: 'column', 
@@ -218,7 +229,7 @@ const Register = () => {
           </Alert>
         )}
 
-        <Box component="form" onSubmit={activeStep === steps.length - 1 ? handleSubmit : undefined} sx={{ mt: 1, width: '100%' }}>
+        <Box sx={{ mt: 1, width: '100%' }}>
           {getStepContent(activeStep)}
 
           <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 3 }}>
@@ -231,7 +242,7 @@ const Register = () => {
             </Button>
             {activeStep === steps.length - 1 ? (
               <Button
-                type="submit"
+                onClick={handleSubmit}
                 variant="contained"
                 color="primary"
               >
@@ -258,6 +269,7 @@ const Register = () => {
         </Grid>
       </Paper>
     </Container>
+    </Box>
   );
 };
 

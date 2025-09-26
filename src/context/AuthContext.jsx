@@ -48,13 +48,20 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Função de registro
-  const register = (userData) => {
+  const register = (name, email, password, userType) => {
     // Simulando registro de usuário
     // Em um sistema real, enviaríamos para o backend
     const newUser = {
       id: `USER${Date.now()}`,
-      ...userData
+      name,
+      email,
+      role: userType
     };
+    
+    // Autenticar o usuário após o registro
+    setCurrentUser(newUser);
+    setIsAuthenticated(true);
+    localStorage.setItem('educamais_user', JSON.stringify(newUser));
     
     // Simulando sucesso
     return { success: true, user: newUser };
@@ -90,4 +97,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export default AuthContext;
+// Removendo export default para compatibilidade com Fast Refresh

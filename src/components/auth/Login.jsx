@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import {
   Box,
@@ -68,7 +68,8 @@ const Login = () => {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
+        width: '100vw',
         alignItems: 'center',
         bgcolor: '#f5f5f5',
         py: 4
@@ -176,7 +177,7 @@ const Login = () => {
               </Box>
 
               <Box sx={{ mt: 3, textAlign: 'center' }}>
-                <Link href="/register" variant="body2">
+                <Link component={RouterLink} to="/register" variant="body2">
                   Não tem uma conta? Cadastre-se
                 </Link>
                 <br />

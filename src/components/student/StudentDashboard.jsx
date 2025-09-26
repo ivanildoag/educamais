@@ -192,7 +192,21 @@ const StudentDashboard = () => {
             <List>
               {recentMaterials.map((material) => (
                 <Box key={material.id}>
-                  <ListItem>
+                  <ListItem sx={{ alignItems: 'flex-start' }}>
+                    {material.thumbnail && (
+                      <Box
+                        sx={{
+                          width: 60,
+                          height: 60,
+                          backgroundImage: `url(${material.thumbnail})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          borderRadius: 1,
+                          mr: 2,
+                          flexShrink: 0
+                        }}
+                      />
+                    )}
                     <ListItemText
                       primary={material.title}
                       secondary={
@@ -238,21 +252,21 @@ const StudentDashboard = () => {
                   title: 'Energia Renovável', 
                   description: 'Aprenda sobre fontes de energia renovável e seu impacto no meio ambiente.',
                   progress: 65,
-                  image: 'https://source.unsplash.com/random/300x200/?renewable'
+                  image: 'https://picsum.photos/300/200?random=17'
                 },
                 { 
                   id: 2, 
                   title: 'Consumo Consciente', 
                   description: 'Descubra práticas de consumo consciente e como reduzir seu impacto ambiental.',
                   progress: 30,
-                  image: 'https://source.unsplash.com/random/300x200/?sustainable'
+                  image: 'https://picsum.photos/300/200?random=18'
                 },
                 { 
                   id: 3, 
                   title: 'Biodiversidade', 
                   description: 'Explore a importância da biodiversidade para o equilíbrio dos ecossistemas.',
                   progress: 10,
-                  image: 'https://source.unsplash.com/random/300x200/?biodiversity'
+                  image: 'https://picsum.photos/300/200?random=19'
                 }
               ].map((trail) => (
                 <Grid item xs={12} sm={6} md={4} key={trail.id}>

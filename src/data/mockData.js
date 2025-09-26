@@ -48,7 +48,7 @@ export const courses = [
     description: 'Estudo dos ecossistemas e práticas sustentáveis',
     teacherId: 1,
     teacherName: 'Maria Silva',
-    image: 'https://source.unsplash.com/random/300x200/?biology',
+    image: 'https://picsum.photos/300/200?random=1',
     students: [2, 3],
     grade: 'Ensino Médio',
     tags: ['sustentabilidade', 'ecologia', 'meio ambiente']
@@ -59,7 +59,7 @@ export const courses = [
     description: 'Estudo das transformações geográficas e impactos ambientais',
     teacherId: 4,
     teacherName: 'Carlos Mendes',
-    image: 'https://source.unsplash.com/random/300x200/?geography',
+    image: 'https://picsum.photos/300/200?random=2',
     students: [2],
     grade: 'Ensino Médio',
     tags: ['geografia', 'meio ambiente', 'clima']
@@ -70,7 +70,7 @@ export const courses = [
     description: 'Fundamentos das ciências naturais para o ensino fundamental',
     teacherId: 1,
     teacherName: 'Maria Silva',
-    image: 'https://source.unsplash.com/random/300x200/?science',
+    image: 'https://picsum.photos/300/200?random=3',
     students: [2, 3],
     grade: 'Ensino Fundamental',
     tags: ['ciências', 'natureza', 'experimentos']
@@ -87,7 +87,8 @@ export const studyMaterials = [
     description: 'Material introdutório sobre ecossistemas e biodiversidade',
     url: '#',
     createdAt: '2023-05-10',
-    teacherId: 1
+    teacherId: 1,
+    thumbnail: 'https://picsum.photos/300/200?random=4'
   },
   {
     id: 2,
@@ -98,7 +99,8 @@ export const studyMaterials = [
     url: '#',
     duration: '15:30',
     createdAt: '2023-05-15',
-    teacherId: 1
+    teacherId: 1,
+    thumbnail: 'https://picsum.photos/300/200?random=5'
   },
   {
     id: 3,
@@ -108,7 +110,8 @@ export const studyMaterials = [
     description: 'Artigo sobre as causas e consequências das mudanças climáticas',
     url: '#',
     createdAt: '2023-04-22',
-    teacherId: 4
+    teacherId: 4,
+    thumbnail: 'https://picsum.photos/300/200?random=6'
   },
   {
     id: 4,
@@ -118,7 +121,8 @@ export const studyMaterials = [
     description: 'Apresentação sobre o método científico e sua aplicação',
     url: '#',
     createdAt: '2023-06-05',
-    teacherId: 1
+    teacherId: 1,
+    thumbnail: 'https://picsum.photos/300/200?random=7'
   }
 ];
 
@@ -203,7 +207,7 @@ export const libraryResources = [
     description: 'Guia completo com práticas sustentáveis para o dia a dia',
     tags: ['sustentabilidade', 'práticas', 'meio ambiente'],
     url: '#',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?sustainability'
+    thumbnail: 'https://picsum.photos/100/150?random=8'
   },
   {
     id: 2,
@@ -214,7 +218,7 @@ export const libraryResources = [
     tags: ['biodiversidade', 'fauna', 'flora', 'conservação'],
     url: '#',
     duration: '45:20',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?biodiversity'
+    thumbnail: 'https://picsum.photos/100/150?random=9'
   },
   {
     id: 3,
@@ -224,7 +228,7 @@ export const libraryResources = [
     description: 'Artigo científico sobre fontes de energia renovável',
     tags: ['energia', 'renovável', 'sustentabilidade'],
     url: '#',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?renewable'
+    thumbnail: 'https://picsum.photos/100/150?random=10'
   },
   {
     id: 4,
@@ -234,7 +238,7 @@ export const libraryResources = [
     description: 'Mapa interativo mostrando índices de poluição ao redor do mundo',
     tags: ['poluição', 'dados', 'global'],
     url: '#',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?pollution'
+    thumbnail: 'https://picsum.photos/100/150?random=11'
   },
   {
     id: 5,
@@ -244,7 +248,7 @@ export const libraryResources = [
     description: 'Guia passo a passo para implementação de hortas em escolas',
     tags: ['horta', 'escola', 'alimentação', 'sustentabilidade'],
     url: '#',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?garden'
+    thumbnail: 'https://picsum.photos/100/150?random=12'
   },
   {
     id: 6,
@@ -254,7 +258,7 @@ export const libraryResources = [
     description: 'Apresentação educativa sobre o ciclo da água e práticas de conservação',
     tags: ['água', 'conservação', 'ciclo'],
     url: '#',
-    thumbnail: 'https://source.unsplash.com/random/100x150/?water'
+    thumbnail: 'https://picsum.photos/100/150?random=13'
   }
 ];
 
@@ -385,7 +389,7 @@ export const learningPaths = [
     id: 1,
     title: 'Introdução à Sustentabilidade',
     description: 'Trilha introdutória sobre conceitos básicos de sustentabilidade',
-    image: 'https://source.unsplash.com/random/300x200/?sustainability',
+    image: 'https://picsum.photos/300/200?random=14',
     modules: [
       {
         id: 1,
@@ -415,7 +419,7 @@ export const learningPaths = [
     id: 2,
     title: 'Energia Renovável',
     description: 'Aprenda sobre diferentes fontes de energia renovável e sua importância',
-    image: 'https://source.unsplash.com/random/300x200/?renewable-energy',
+    image: 'https://picsum.photos/300/200?random=15',
     modules: [
       {
         id: 4,
@@ -445,7 +449,7 @@ export const learningPaths = [
     id: 3,
     title: 'Consumo Consciente',
     description: 'Práticas para um consumo mais consciente e sustentável no dia a dia',
-    image: 'https://source.unsplash.com/random/300x200/?conscious-consumption',
+    image: 'https://picsum.photos/300/200?random=16',
     modules: [
       {
         id: 7,

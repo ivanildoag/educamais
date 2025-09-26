@@ -37,7 +37,7 @@ const DigitalLibrary = () => {
       description: 'Um guia completo sobre fontes de energia renovável e seu impacto no meio ambiente.',
       author: 'Instituto Ambiental',
       date: '2023-03-15',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?renewable'
+      thumbnail: 'https://picsum.photos/300/200?random=20'
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ const DigitalLibrary = () => {
       description: 'Manual prático com dicas para reduzir o consumo e adotar práticas sustentáveis no dia a dia.',
       author: 'Maria Santos',
       date: '2023-02-10',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?recycling'
+      thumbnail: 'https://picsum.photos/300/200?random=21'
     },
     {
       id: 3,
@@ -59,7 +59,7 @@ const DigitalLibrary = () => {
       description: 'Documentário sobre a rica biodiversidade brasileira e a importância de sua conservação.',
       author: 'Canal Educação Ambiental',
       date: '2023-04-22',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?biodiversity'
+      thumbnail: 'https://picsum.photos/300/200?random=22'
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ const DigitalLibrary = () => {
       description: 'Apresentação com dados estatísticos e gráficos sobre sustentabilidade global.',
       author: 'Prof. Carlos Oliveira',
       date: '2023-01-30',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?statistics'
+      thumbnail: 'https://picsum.photos/300/200?random=23'
     },
     {
       id: 5,
@@ -81,7 +81,7 @@ const DigitalLibrary = () => {
       description: 'Estudo sobre a importância da água e estratégias para sua conservação.',
       author: 'Fundação Água Viva',
       date: '2023-03-22',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?water'
+      thumbnail: 'https://picsum.photos/300/200?random=24'
     },
     {
       id: 6,
@@ -92,7 +92,7 @@ const DigitalLibrary = () => {
       description: 'Análise de obras literárias que abordam temas ambientais.',
       author: 'Profa. Ana Beatriz',
       date: '2023-05-05',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?books'
+      thumbnail: 'https://picsum.photos/300/200?random=25'
     },
     {
       id: 7,
@@ -103,7 +103,7 @@ const DigitalLibrary = () => {
       description: 'Série de vídeos com experimentos científicos relacionados à sustentabilidade.',
       author: 'Laboratório Verde',
       date: '2023-04-10',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?experiment'
+      thumbnail: 'https://picsum.photos/300/200?random=26'
     },
     {
       id: 8,
@@ -114,7 +114,7 @@ const DigitalLibrary = () => {
       description: 'Linha do tempo com os principais marcos da conservação ambiental no Brasil e no mundo.',
       author: 'Instituto Histórico Ambiental',
       date: '2023-02-28',
-      thumbnail: 'https://source.unsplash.com/random/300x200/?conservation'
+      thumbnail: 'https://picsum.photos/300/200?random=27'
     }
   ];
   
