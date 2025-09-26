@@ -208,7 +208,7 @@ const Register = () => {
         }}>
           <SchoolIcon color="primary" sx={{ fontSize: 50, mb: 1 }} />
           <Typography component="h1" variant="h4" color="primary">
-            EducaMais
+            Educa+
           </Typography>
           <Typography component="h2" variant="h5">
             Cadastro

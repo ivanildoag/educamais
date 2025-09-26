@@ -97,7 +97,7 @@ const Layout = () => {
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <SchoolIcon color="primary" sx={{ mr: 1 }} />
           <Typography variant="h6" color="primary" noWrap>
-            EducaMais
+            Educa+
           </Typography>
         </Box>
       </Toolbar>

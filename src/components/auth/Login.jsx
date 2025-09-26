@@ -89,7 +89,7 @@ const Login = () => {
           >
             <SchoolIcon sx={{ fontSize: 40, mb: 1 }} />
             <Typography variant="h4" component="h1" gutterBottom>
-              EducaMais
+              Educa+
             </Typography>
             <Typography variant="subtitle1">
               Plataforma Educacional Sustentável
